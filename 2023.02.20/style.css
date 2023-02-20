@@ -1,0 +1,57 @@
+.wrapper {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #0004;
+    display: grid;
+    grid-template-rows: 40px;
+}
+.calendar_m {
+    grid-template-columns: repeat(7, 100px);
+    grid-auto-rows: 100px;
+}
+.calendar__header {
+    background: silver;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.calendar__header_m {
+    grid-column-end: span 7;
+}
+.calendar__day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: fantasy;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    /*border-radius: 10px;*/
+}
+.calendar__day_br {
+    border-right: 1px solid;
+}
+.calendar__day_bb {
+    border-bottom: 1px solid;
+}
+.sticker {
+    display: grid;
+    padding: 6px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+}
+.sticker__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: silver;
+    font-family: sans-serif;
+    font-size: 10px;
+}

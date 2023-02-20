@@ -1,0 +1,92 @@
+:root {
+    --main: #373157;
+    --light: #f8f8fa;
+}
+/* Отступы */
+.m-0 {
+    margin: 0;
+}
+.p-0 {
+    padding: 0;
+}
+.p-10 {
+    padding: 10px;
+}
+.py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.px-w1000 {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+}
+
+/* Размеры */
+.w-100 {
+    width: 100%;
+}
+.w-3el {
+    width: calc(100% / 3 - 20px);
+}
+/* Цвета */
+.c-m {
+    color: var(--main);
+}
+.c-l {
+    color: var(--light);
+}
+.bg-m {
+    background-color:  var(--main);
+}
+.bg-l {
+    background-color:  var(--light);
+}
+
+body {
+    font-family: sans-serif;
+}
+.price-block {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.title {
+    text-align: center;
+    font-weight: normal;
+}
+.price-card {
+    border-radius: 4px;
+}
+.name {
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+.number {
+    text-align: center;
+    border: 1px solid var(--main);
+    font-weight: 600;
+    font-size: 20px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ol {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+}
+.btn {
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    line-height: 1;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BEM</title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+      BEM (БЭМ) -
+        Блок
+        Элемент
+        Модификатор
+
+      БЭМ запрещает:
+      -Файлы resize.css / normalize.css
+      -Все css-селекторы, кроме классов
+      -Классы не называются как теги
+
+      .main-container
+      .header-container
+      .wrapper-container
+
+      .menu
+      .menu_vertical - модификатор блока
+      .menu__link
+      .menu__link_hover_blue:hover {
+        color: blue
+      }
+      .menu__link_red
+      .menu__link_green
+      .menu__link_dark
+      .menu__item
+      .menu__tab
+      .menu__list
+      .menu__sub-list
+
+      .navigation-menu__tabs-item-image
+      .menu__tab-img
+
+      .calendar_m
+      .calendar_d
+      .calendar_w
+      .calendar_y
+    -->
+</head>
+<body class="wrapper">
+    <div class="calendar calendar_m">
+        <header class="calendar__header calendar__header_m"></header>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">1</div>
+                <div class="sticker__name">Mon</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">2</div>
+                <div class="sticker__name">Tue</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">3</div>
+                <div class="sticker__name">Wed</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">4</div>
+                <div class="sticker__name">Thu</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">5</div>
+                <div class="sticker__name">Fri</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">6</div>
+                <div class="sticker__name">Sat</div>
+            </div>
+         </div>
+        <div class="calendar__day sticker calendar__day_br">
+            <div class="sticker__title">
+                <div class="sticker__day">7</div>
+                <div class="sticker__name">Sun</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">8</div>
+                <div class="sticker__name">Mon</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">9</div>
+                <div class="sticker__name">Tue</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">10</div>
+                <div class="sticker__name">Wed</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">11</div>
+                <div class="sticker__name">Thu</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">12</div>
+                <div class="sticker__name">Fri</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">13</div>
+                <div class="sticker__name">Sat</div>
+            </div>
+         </div>
+        <div class="calendar__day sticker calendar__day_br">
+            <div class="sticker__title">
+                <div class="sticker__day">14</div>
+                <div class="sticker__name">Sun</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">15</div>
+                <div class="sticker__name">Mon</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">16</div>
+                <div class="sticker__name">Tue</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">17</div>
+                <div class="sticker__name">Wed</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">18</div>
+                <div class="sticker__name">Thu</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">19</div>
+                <div class="sticker__name">Fri</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">20</div>
+                <div class="sticker__name">Sat</div>
+            </div>
+         </div>
+        <div class="calendar__day sticker calendar__day_br">
+            <div class="sticker__title">
+                <div class="sticker__day">21</div>
+                <div class="sticker__name">Sun</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">22</div>
+                <div class="sticker__name">Mon</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">23</div>
+                <div class="sticker__name">Tue</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">24</div>
+                <div class="sticker__name">Wed</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">25</div>
+                <div class="sticker__name">Thu</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">26</div>
+                <div class="sticker__name">Fri</div>
+            </div>
+        </div>
+        <div class="calendar__day sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">27</div>
+                <div class="sticker__name">Sat</div>
+            </div>
+         </div>
+        <div class="calendar__day sticker calendar__day_br">
+            <div class="sticker__title">
+                <div class="sticker__day">28</div>
+                <div class="sticker__name">Sun</div>
+            </div>
+        </div>
+        <div class="calendar__day calendar__day_bb sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">29</div>
+                <div class="sticker__name">Mon</div>
+            </div>
+        </div>
+        <div class="calendar__day calendar__day_bb sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">30</div>
+                <div class="sticker__name">Tue</div>
+            </div>
+        </div>
+        <div class="calendar__day calendar__day_bb sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">31</div>
+                <div class="sticker__name">Wed</div>
+            </div>
+        </div>
+        <div class="calendar__day calendar__day_bb sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">32</div>
+                <div class="sticker__name">Thu</div>
+            </div>
+        </div>
+        <div class="calendar__day calendar__day_bb sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">33</div>
+                <div class="sticker__name">Fri</div>
+            </div>
+        </div>
+        <div class="calendar__day calendar__day_bb sticker">
+            <div class="sticker__title">
+                <div class="sticker__day">34</div>
+                <div class="sticker__name">Sat</div>
+            </div>
+        </div>
+        <div class="calendar__day  calendar__day_bb sticker calendar__day_br">
+            <div class="sticker__title">
+                <div class="sticker__day">35</div>
+                <div class="sticker__name">Sun</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
